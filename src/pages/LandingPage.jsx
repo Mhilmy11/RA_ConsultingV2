@@ -11,22 +11,22 @@ import Team1 from "../assets/teams_assets/team01.png";
 import Team2 from "../assets/teams_assets/team02.png";
 import Team3 from "../assets/teams_assets/team03.png";
 
-import Client1 from "../assets/clients_assets/knu.jpg";
-import Client2 from "../assets/clients_assets/kopsurindo.png";
-import Client3 from "../assets/clients_assets/lds-group-black.png";
+import Client1 from "../assets/clients_assets/knu.webp";
+import Client2 from "../assets/clients_assets/kopsurindo.webp";
+import Client3 from "../assets/clients_assets/lds-group-black.webp";
 import Client4 from "../assets/clients_assets/logo-minori-300x136.webp";
-import Client5 from "../assets/clients_assets/nala.png";
-import Client6 from "../assets/clients_assets/pialite.jpg";
-import Client7 from "../assets/clients_assets/polyplex-logo.jpg";
-import Client8 from "../assets/clients_assets/pt-anak-sehat-idaman-hati.png";
-import Client9 from "../assets/clients_assets/pt-cataler-indonesia.png";
-import Client10 from "../assets/clients_assets/pt-hybrid-power.png";
-import Client11 from "../assets/clients_assets/pt-hyundai-elevator-indonesia.jpeg";
-import Client12 from "../assets/clients_assets/pt-nikawa-textile-industry.png";
-import Client13 from "../assets/clients_assets/pt-penilai-harga-efek-indonesia-(PHEI).jpeg";
-import Client14 from "../assets/clients_assets/pt-sumbawa-timur.jpeg";
-import Client15 from "../assets/clients_assets/pt-vale-indonesia.png";
-import Client16 from "../assets/clients_assets/tokopedia-pt-mastrada.png";
+import Client5 from "../assets/clients_assets/nala.webp";
+import Client6 from "../assets/clients_assets/pialite.webp";
+import Client7 from "../assets/clients_assets/polyplex-logo.webp";
+import Client8 from "../assets/clients_assets/pt-anak-sehat-idaman-hati.webp";
+import Client9 from "../assets/clients_assets/pt-cataler-indonesia.webp";
+import Client10 from "../assets/clients_assets/pt-hybrid-power.webp";
+import Client11 from "../assets/clients_assets/pt-hyundai-elevator-indonesia.webp";
+import Client12 from "../assets/clients_assets/pt-nikawa-textile-industry.webp";
+import Client13 from "../assets/clients_assets/pt-penilai-harga-efek-indonesia-(PHEI).webp";
+import Client14 from "../assets/clients_assets/pt-sumbawa-timur.webp";
+import Client15 from "../assets/clients_assets/pt-vale-indonesia.webp";
+import Client16 from "../assets/clients_assets/tokopedia-pt-mastrada.webp";
 
 import About1 from "../assets/AboutUs_Image.jpg";
 
@@ -182,7 +182,7 @@ const clients = [
   },
 ];
 
-export default function LandingPage() {
+export default function LandingPage({ expertRef, servicesRef, clientsRef }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -298,7 +298,7 @@ export default function LandingPage() {
         </Container>
       </div>
 
-      <div className=" bg-slate-100 pt-8 pb-24 my-16 md:my-24">
+      <div ref={expertRef} className=" bg-slate-100 pt-8 pb-24 my-16 md:my-24">
         <Container>
           <div>
             <div className=" place-items-center mb-10">
@@ -333,7 +333,7 @@ export default function LandingPage() {
         </Container>
       </div>
 
-      <div className=" my-16 md:my-24">
+      <div ref={servicesRef} className=" my-16 md:my-24">
         <Container>
           <div className="mb-10">
             <p className=" text-2xl md:text-4xl font-bold mb-2">Our Services</p>
@@ -365,7 +365,7 @@ export default function LandingPage() {
         </Container>
       </div>
 
-      <div className=" bg-slate-100 py-8 my-16 md:my-24">
+      <div ref={clientsRef} className=" bg-slate-100 py-8 my-16 md:my-24">
         <Container>
           <div className=" place-items-center mb-10">
             <p className=" text-2xl md:text-4xl font-semibold mb-2">
